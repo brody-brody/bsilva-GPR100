@@ -6,9 +6,11 @@ using TMPro;
 public class TimerScript : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
-	public float _timer = 1f;
-	float startingTime = 30f;
+	private float _timer = 1f;
+	public float startingTime = 30f;
 	public Movement script;
+
+	public float timer { get{ return _timer; }}
 	
 	
     void Start()

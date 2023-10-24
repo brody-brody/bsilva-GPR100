@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
 		}
 		else if (canMove == false)
 		{
-			
+			_rb.velocity = Vector2.zero;
 		}
     }
 	
