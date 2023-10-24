@@ -28,7 +28,6 @@ public class Movement : MonoBehaviour
 	{
 		_xMove = Input.GetAxis("Horizontal");
 		_yMove = Input.GetAxis("Vertical");
-		Debug.Log(_xMove + ", " + _yMove);
 	}
 	
 	private void FixedUpdate()
