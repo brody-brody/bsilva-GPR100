@@ -5,23 +5,26 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 	private float _xMove;
-	
 	private float _yMove;
-	
 	private Rigidbody2D _rb;
-	
 	public float speed = 10f;
+	public bool canMove = true;
 	
-    // Start is called before the first frame update
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+		if (canMove == true)
+		{
         CheckInput();
+		}
+		else if (canMove == false)
+		{
+			
+		}
     }
 	
 	void CheckInput()
